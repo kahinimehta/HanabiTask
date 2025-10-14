@@ -32,22 +32,23 @@ Work with an AI partner (who has seen the same sequence) to recreate a sequence 
 ### Press H (Hint)
 Tell the AI partner about one of their cards
 - Choose which card (1, 2, or 3)
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 1 00 45 AM" src="https://github.com/user-attachments/assets/04c7dee2-8433-4a7f-990c-ac0b5ab31c39" />
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 45 AM" src="https://github.com/user-attachments/assets/04c7dee2-8433-4a7f-990c-ac0b5ab31c39" />
 
 - Tell them either its **COLOR** or its **POSITION** (1 or 2)
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 1 01 08 AM" src="https://github.com/user-attachments/assets/964c3f9a-6b6d-440d-8921-b680c6afb0dc" />
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 08 AM" src="https://github.com/user-attachments/assets/964c3f9a-6b6d-440d-8921-b680c6afb0dc" />
+<br>
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 27 AM" src="https://github.com/user-attachments/assets/6201b503-838d-476d-8f52-82c7d03c57ba" />
 
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 58 27 AM" src="https://github.com/user-attachments/assets/6201b503-838d-476d-8f52-82c7d03c57ba" />
 
 ### Press P (Play)
 Play one of your own cards
 - Choose which of your 3 cards to play (1, 2, or 3)
-  <img width="300" height="200" alt="Screenshot 2025-10-14 at 1 01 53 AM" src="https://github.com/user-attachments/assets/ed132214-a3e5-4ca9-9ac1-2fecb097396b" />
+  <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 53 AM" src="https://github.com/user-attachments/assets/ed132214-a3e5-4ca9-9ac1-2fecb097396b" />
 
 - Choose which slot (1, 2, or 3) to put it in
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
 
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 58 55 AM" src="https://github.com/user-attachments/assets/48f82db3-cb56-4f15-87b0-0ea6e7da8aca" />
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 55 AM" src="https://github.com/user-attachments/assets/48f82db3-cb56-4f15-87b0-0ea6e7da8aca" />
 
 ### Press R (Replace)
 Swap out one of your cards for a new one
