@@ -2,7 +2,7 @@
 
 ## Goal
 Set up: 
-1. Generate stimuli using `generate_stimuli.py` (stimuli also uploaded)
+1. Generate stimuli using `generate_stimuli.py` (stimuli also uploaded) into a folder called `Shapes`
 2. Set up and activate a conda environment with psychopy
 3. In Terminal, type : `python task_v0.0py`
    
