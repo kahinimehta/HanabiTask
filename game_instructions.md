@@ -51,6 +51,9 @@ Swap out one of your cards for a new one
 3. **Completion**: Once all 3 slots are filled, see how well you did!
 4. **Results**: Your score and time will be saved automatically to a spreadsheet called `player_accuracy.csv`
 
+
+Note: The function `run_localizer` is commented out, hence the localizer will not run. You can uncomment this to try out the localizer. 
+
 ---
 
 
