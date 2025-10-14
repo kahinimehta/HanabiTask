@@ -43,7 +43,8 @@ Tell the AI partner about one of their cards
 ### Press P (Play)
 Play one of your own cards
 - Choose which of your 3 cards to play (1, 2, or 3)
-  <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 53 AM" src="https://github.com/user-attachments/assets/ed132214-a3e5-4ca9-9ac1-2fecb097396b" />
+<br>
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 53 AM" src="https://github.com/user-attachments/assets/ed132214-a3e5-4ca9-9ac1-2fecb097396b" />
 
 - Choose which slot (1, 2, or 3) to put it in
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
