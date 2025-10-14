@@ -25,6 +25,7 @@ This implementation consists of three main components:
 - **PsychoPy**: For visual presentation and event handling
 - **PIL (Pillow)**: For image processing
 - **NumPy**: For data analysis
+- **Pandas**: For saving out data to spreadsheets
 - **Python Standard Library**: For file operations and randomization
 
 ---
