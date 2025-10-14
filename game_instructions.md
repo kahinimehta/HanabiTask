@@ -62,6 +62,7 @@ Swap out one of your cards for a new one
 
 - When the AI has enough information (both color AND position), it will play its cards automatically
 <img width="300" height="200" alt="Screenshot 2025-10-14 at 12 59 49 AM" src="https://github.com/user-attachments/assets/8e7deb46-337a-4046-8e4d-76fecf3c1f84" />
+<br>
 - Work together strategically!
 
 ## Winning
