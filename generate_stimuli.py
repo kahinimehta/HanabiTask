@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageChops
 import numpy as np
 
 # --- SETUP ---
-save_dir = "/Users/mehtaka/Desktop/Columbia/Nuttida_Lab/Collaboration_Code/Shapes"
+save_dir = "/Shapes" 
 os.makedirs(save_dir, exist_ok=True)
 
 colors = {
