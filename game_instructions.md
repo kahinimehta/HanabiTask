@@ -23,7 +23,9 @@ Work with an AI partner (who has seen the same sequence) to recreate a sequence 
 <p align="center">
 <img width="300" height="200" alt="Screenshot 2025-10-14 at 12 58 02 AM" src="https://github.com/user-attachments/assets/77c01ed6-602d-42dc-ace1-ae651264d7bc" />
 </p>
+
 - Your partner can see your cards but not their own!
+  
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 10 AM" src="https://github.com/user-attachments/assets/50b8875b-8a4d-42de-bbfe-ff12ca819cd7" />
 </p>
