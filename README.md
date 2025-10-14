@@ -53,5 +53,4 @@ Swap out one of your cards for a new one
 
 ---
 
-**Good luck and have fun! 🎮**
 
