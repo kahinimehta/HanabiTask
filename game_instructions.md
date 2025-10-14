@@ -1,10 +1,10 @@
 # How to play
 
-## Goal
-Set up: 
-1. Generate stimuli using `generate_stimuli.py` (stimuli also uploaded) into a folder called `Shapes`
-2. Set up and activate a conda environment with psychopy
+## Set up
+1. Generate stimuli using `generate_stimuli.py` into a folder called `Shapes`. The shapes have also been uploaded here in a compressed file called `Shapes.zip` for ease. 
+2. Set up and activate a conda environment with PsychoPy. 
 3. In Terminal, type : `python task_v0.0py`
+4. Follow the instructions to play the game!
    
 ## Goal
 Work with an AI partner to recreate a sequence of 3 cards in the correct order.
