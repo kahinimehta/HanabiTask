@@ -1,6 +1,12 @@
 # How to play
 
 ## Goal
+Set up: 
+1. Generate stimuli using `generate_stimuli.py` (stimuli also uploaded)
+2. Set up and activate a conda environment with psychopy
+3. In Terminal, type : `python task_v0.0py`
+   
+## Goal
 Work with an AI partner to recreate a sequence of 3 cards in the correct order.
 
 ## The Twist
