@@ -48,7 +48,7 @@ Play one of your own cards
 
 - Choose which slot (1, 2, or 3) to put it in
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
-
+<br>
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 55 AM" src="https://github.com/user-attachments/assets/48f82db3-cb56-4f15-87b0-0ea6e7da8aca" />
 
 ### Press R (Replace)
@@ -68,7 +68,7 @@ Swap out one of your cards for a new one
 - At the end, your played sequence is compared to the target sequence
 - You get a score out of 3 (how many cards match in the correct positions)
 - You'll play 2 practice trials
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 1 00 09 AM" src="https://github.com/user-attachments/assets/caf39ce1-cb1f-47c8-a2b8-38544de48112" />
+<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 09 AM" src="https://github.com/user-attachments/assets/caf39ce1-cb1f-47c8-a2b8-38544de48112" />
 
 ## Game Flow
 1. **Encoding Phase**: Study the target sequence carefully
