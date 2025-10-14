@@ -615,7 +615,7 @@ def run_practice():
                 # Different hint type from last time
                 hint_type = 'position' if self.last_hint_given['hint_type'] == 'color' else 'color'
             else:
-                # Choose most informative hint type
+                # Choose random hint type
                 hint_type = random.choice(['color', 'position'])
             
             hint_value = card[0] if hint_type == 'color' else card[1]
@@ -654,7 +654,7 @@ def run_practice():
                     if self.sequence_knowledge[i] is None:
                         self.urgency_scores[i] += 5
                         
-            # Lower urgency for slots we already know
+            # 0 urgency for slots we already know
             for i in range(3):
                 if self.sequence_knowledge[i] is not None:
                     self.urgency_scores[i] = 0
@@ -966,7 +966,7 @@ def run_practice():
                         computer_cards[replace_idx] = new_card
                         render_board_with_participant_cards(computer_cards, participant_cards, played_sequence, f"AI replaced an unhinted card at position {replace_idx+1}.")
                     else:
-                        # AI has hints about all cards, so just wait
+                        # AI has hints about all cards, but not enough info to know which card (i.e -- not color and position)  -- so just wait
                         render_board_with_participant_cards(computer_cards, participant_cards, played_sequence, "AI is waiting for more information.")
                     
                     safe_wait(2.5)
