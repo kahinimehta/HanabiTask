@@ -5,7 +5,7 @@
 4. `Demo.mp4` - a video demonstration of how to play the game
 
 
-## How to play
+# How to play
 
 ## Goal
 Work with an AI partner to recreate a sequence of 3 cards in the correct order.
