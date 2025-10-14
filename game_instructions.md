@@ -35,7 +35,7 @@ Work with an AI partner (who has seen the same sequence) to recreate a sequence 
 ### Press H (Hint)
 Tell the AI partner about one of their cards
 - Choose which card (1, 2, or 3)
-- <p align="center">
+<p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 45 AM" src="https://github.com/user-attachments/assets/04c7dee2-8433-4a7f-990c-ac0b5ab31c39" />
 </p>
 - Tell them either its **COLOR** or its **POSITION** (1 or 2)
