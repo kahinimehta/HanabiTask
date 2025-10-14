@@ -7,7 +7,7 @@
 4. Follow the instructions to play the game!
    
 ## Goal
-Work with an AI partner to recreate a sequence of 3 cards in the correct order.
+Work with an AI partner (who has seen the same sequence) to recreate a sequence of 3 cards in the correct order.
 
 ## The Twist
 - You **cannot see your own cards** (they're shown as black boxes to you)
