@@ -29,6 +29,7 @@ Work with an AI partner (who has seen the same sequence) to recreate a sequence 
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 10 AM" src="https://github.com/user-attachments/assets/50b8875b-8a4d-42de-bbfe-ff12ca819cd7" />
 </p>
+
 ## Setup
 1. At the start, you'll be shown a **target sequence** of 3 colored shapes
 2. You need to memorize this sequence
@@ -39,10 +40,13 @@ Work with an AI partner (who has seen the same sequence) to recreate a sequence 
 ### Press H (Hint)
 Tell the AI partner about one of their cards
 - Choose which card (1, 2, or 3)
+- 
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 45 AM" src="https://github.com/user-attachments/assets/04c7dee2-8433-4a7f-990c-ac0b5ab31c39" />
 </p>
+
 - Tell them either its **COLOR** or its **POSITION** (1 or 2)
+  
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 08 AM" src="https://github.com/user-attachments/assets/964c3f9a-6b6d-440d-8921-b680c6afb0dc" />
 </p>
@@ -61,6 +65,7 @@ Play one of your own cards
 </p>
 
 - Choose which slot (1, 2, or 3) to put it in
+  
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
 </p>
@@ -75,21 +80,25 @@ Swap out one of your cards for a new one
 
 ## How the AI Helps You
 - The AI will give you hints about **your** cards
+  
 <p align="center">
 <img width="300" height="200" alt="Screenshot 2025-10-14 at 12 59 28 AM" src="https://github.com/user-attachments/assets/ba0f3b5b-b1a0-4293-bc53-7b375b0c5875" />
 </p>
 
 - When the AI has enough information (both color AND position), it will play its cards automatically
+  
 <p align="center">
 <img width="300" height="200" alt="Screenshot 2025-10-14 at 12 59 49 AM" src="https://github.com/user-attachments/assets/8e7deb46-337a-4046-8e4d-76fecf3c1f84" />
 </p>
 <br>
+
 - Work together strategically!
 
 ## Winning
 - At the end, your played sequence is compared to the target sequence
 - You get a score out of 3 (how many cards match in the correct positions)
 - You'll play 2 practice trials
+
 <p align="center">
 <img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 09 AM" src="https://github.com/user-attachments/assets/caf39ce1-cb1f-47c8-a2b8-38544de48112" />
 </p>
