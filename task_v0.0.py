@@ -1082,9 +1082,9 @@ def run_practice():
     show_instructions_with_space("Your results have been saved!\n\nThank you!")
 
 
-# run_localizer()
+# run_localizer() # uncomment to run the localizer
 run_practice()
-# run_memory_game()
+
 
 win.close()
 core.quit()
