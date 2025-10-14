@@ -271,12 +271,6 @@ Bottom (y=-0.20):[Your Card 1][Your Card 2][Your Card 3]
 ### 10. `show_instructions_with_space(text, wait_time=0.1)`
 **Purpose**: Improved instruction display with better space key handling
 
-**Improvements over basic version**:
-- Clears event buffer
-- Small wait to prevent double-registration
-- Uses polling loop instead of blocking wait
-- More reliable across platforms
-
 ### 11. `get_player_name()`
 **Purpose**: Text input for player name
 
@@ -320,7 +314,7 @@ def __init__(self, true_sequence, participant_cards):
 - Knows true sequence (game objective)
 - Can see participant's cards
 - Cannot see its own cards
--  Must rely on hints to learn about own cards
+-  Must rely on hints to learn about own cards (color and positino info required to play)
 
 **Data Structures**:
 
@@ -804,8 +798,9 @@ time_formatted = f"{minutes}:{seconds:02d}"
 - At any given time, a card from the current sequence will be in play
 - The AI always plays the correct card
 - The AI only hints if you have cards that should be in the sequence
-- The AI will wait for position and color information before placing a card
-- If you hint at a card that's not in the sequence, the AI may ignore your hint (unless you've hinted each card in the sequence already -- then it will decide to replace)
+- The AI will wait for BOTH position and color information before placing a card. It may not utilize hints in an optimal way.
+- If you hint at a card that's not in the sequence, the AI may ignore your hint (unless you've hinted all info about each card in their deck already -- then it will decide to replace)
+  
 ## Conclusion
 
 The optimal AI provides a challenging but fair partner that helps participants succeed while requiring strategic thinking and memory.
