@@ -5,5 +5,6 @@
 4. `implementation_details.md` - contains implementation information about the game code
 5. `Demo.mp4` - a video demonstration of how to play the game
 6. `game_instructions.md` - a markdown explaining how to play the game
+7. `pilot_results_summary.pdf` - a summary of the pilot results from version 0.0 of the task
 
 
