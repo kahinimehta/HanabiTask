@@ -1,4 +1,4 @@
-# Implementation Guide: Memory Card Game (task_v0.0.py)
+# Implementation Guide: Memory Card Game (task_v0.1.py)
 
 Tool used: Cursor 
 
@@ -11,6 +11,7 @@ Tool used: Cursor
 6. [AI Implementation](#ai-implementation)
 7. [Game Flow](#game-flow)
 8. [Data Structures](#data-structures)
+9. [Mouse/Touch Interface](#mousetouch-interface)
 
 ---
 
@@ -18,14 +19,14 @@ Tool used: Cursor
 
 This implementation consists of three main components:
 1. **Localizer Task**: A 1-back memory task for color and position
-2. **Practice Game**: A cooperative card game inspired by Hanabi
+2. **Practice Game**: A cooperative card game inspired by Hanabi with mouse/touch interface
 3. **Optimal AI**: An intelligent agent that plays cooperatively with the participant
 
 ### Technologies Used
 - **PsychoPy**: For visual presentation and event handling
 - **PIL (Pillow)**: For image processing
 - **NumPy**: For data analysis
-- **Pandas**: For saving out data to spreadsheets
+- **CSV**: For saving detailed turn-by-turn data
 - **Python Standard Library**: For file operations and randomization
 
 ---
@@ -39,6 +40,7 @@ win = visual.Window(size=[1280, 720], color='white', units='height', fullscr=Fal
 - Creates a 1280x720 window with white background
 - Uses height-based units for cross-platform consistency
 - Not fullscreen for development (change `fullscr=True` for experiments)
+- Touch screen compatible
 
 ### Stimulus Loading
 ```python
@@ -151,7 +153,7 @@ stim.pos = {
     "right": (offset, 0),
 }[pos]
 ```
-Shapes are displaced from center to match their semantic position (on top of already being offset when stimuli are created)
+Shapes are displaced from center to match their semantic position
 
 #### Data Collection
 
@@ -186,7 +188,8 @@ Cooperative memory game where:
 - Participant and AI have 3 cards each
 - Neither player can see their own cards
 - Goal: Recreate a 3-card target sequence
-- Players give hints, play cards, or replace cards
+- **Mouse/Touch Interface**: Click on cards and buttons to interact
+- **Visual Hint System**: Participant cards show hints as colored squares and arrows
 
 ### Function: `run_practice()`
 
@@ -206,7 +209,7 @@ Cooperative memory game where:
 
 **Implementation**: Searches stimuli list for matching filename
 
-### 3. `draw_box(center, w=0.20, h=0.20, line="black", fill=None)`
+### 3. `draw_box(center, w=0.20, h=0.20, line="black", fill=None, linewidth=2)`
 **Purpose**: Draw rectangular card placeholder
 
 **Parameters**:
@@ -214,22 +217,35 @@ Cooperative memory game where:
 - `w`, `h`: Width and height
 - `line`: Border color
 - `fill`: Fill color (None = transparent)
+- `linewidth`: Border thickness
 
-### 4. `draw_card(center, color, pos, faceup=True, thumb=False)`
-**Purpose**: Draw a card with its image
+### 4. `draw_card(center, color, pos, faceup=True, thumb=False, hint_info=None)`
+**Purpose**: Draw a card with optional hint visualization
 
 **Parameters**:
 - `faceup`: If False, draws black box (hidden card)
 - `thumb`: If True, uses smaller size (0.10 vs 0.15)
+- `hint_info`: Dictionary with 'color' and 'position' keys for visual hints
 
-### 5. `render_board_with_participant_cards(...)`
-**Purpose**: Main rendering function for game board
+**Visual Hint System**:
+- **Colored squares**: When color is known
+  - Yellow: `#FFD700`
+  - Blue: `#4169E1`
+  - Cyan: `#00CED1`
+  - Orange: `#FF8C00`
+- **White arrows with black outline**: When position is known
+  - `^` = up, `v` = down, `<` = left, `>` = right
+
+### 5. `render_board(computer_cards, participant_cards, played_sequence, hint_text=None, participant_hints=None, highlight_cards=None, buttons=None)`
+**Purpose**: Main rendering function for game board with persistent display
 
 **Layout**:
 ```
-Top (y=0.40):    [AI Card 1] [AI Card 2] [AI Card 3]
-Middle (y=0.10): [Slot 1]    [Slot 2]    [Slot 3]
-Bottom (y=-0.20):[Your Card 1][Your Card 2][Your Card 3]
+Top (y=0.25):     [AI Card 1] [AI Card 2] [AI Card 3]
+Middle (y=0.05):  [Slot 1]    [Slot 2]    [Slot 3]
+Bottom (y=-0.15): [Your Card 1][Your Card 2][Your Card 3]
+Buttons (y=-0.25): [HINT] [PLAY] [REPLACE]
+Text (y=-0.35):   Instructions
 ```
 
 **Parameters**:
@@ -237,17 +253,40 @@ Bottom (y=-0.20):[Your Card 1][Your Card 2][Your Card 3]
 - `participant_cards`: Participant's cards
 - `played_sequence`: Cards already played
 - `hint_text`: Text displayed at bottom
-- `show_participant_cards`: If True, reveals participant's cards (for selection)
-- `selected_card`: Highlights selected card with red border
+- `participant_hints`: Dictionary storing visual hints for participant cards
+- `highlight_cards`: Set of cards to highlight with red borders
+- `buttons`: Dictionary of button regions to draw
 
-### 6. `choose_index(prompt, options=3)`
-**Purpose**: Get player selection (1-3)
+### 6. `wait_for_click_on_region(regions, clock=None)`
+**Purpose**: Wait for mouse/touch click on one of the defined regions
 
-**Returns**: Index (0-2)
+**Returns**: `(region_name, reaction_time)`
 
-**Key Mapping**: Keys '1', '2', '3' map to indices 0, 1, 2
+**Implementation**:
+- Uses `event.Mouse()` for input detection
+- Returns reaction time in seconds
+- Handles escape key for quitting
+- Waits for mouse release to prevent double-clicks
 
-### 7. `get_available_cards_for_replacement(all_cards_in_use, missing_sequence_cards)`
+### 7. `get_card_regions()`
+**Purpose**: Define clickable regions for all cards
+
+**Returns**: Dictionary mapping region names to coordinate bounds
+
+**Region Types**:
+- `('ai', 0-2)`: AI cards (top row)
+- `('slot', 0-2)`: Sequence slots (middle row)
+- `('participant', 0-2)`: Participant cards (bottom row)
+
+### 8. `get_button_regions(button_names)`
+**Purpose**: Create button regions for actions
+
+**Parameters**:
+- `button_names`: List of button names (e.g., ['HINT', 'PLAY', 'REPLACE'])
+
+**Returns**: Dictionary mapping button names to coordinate bounds
+
+### 9. `get_available_cards_for_replacement(all_cards_in_use, missing_sequence_cards)`
 **Purpose**: Find cards not currently in play
 
 **Logic**:
@@ -258,20 +297,20 @@ Bottom (y=-0.20):[Your Card 1][Your Card 2][Your Card 3]
 
 **Critical Feature**: Ensures missing sequence cards are drawn when available
 
-### 8. `draw_new_card(all_cards_in_use, missing_sequence_cards=[])`
+### 10. `draw_new_card(all_cards_in_use, missing_sequence_cards=[])`
 **Purpose**: Wrapper for getting replacement card
 
-### 9. `check_missing_sequence_cards(true_sequence, computer_cards, participant_cards, played_sequence)`
+### 11. `check_missing_sequence_cards(true_sequence, computer_cards, participant_cards, played_sequence)`
 **Purpose**: Identify sequence cards not in circulation
 
 **Returns**: List of missing cards
 
 **Use Case**: Prevents game from becoming impossible if sequence card is replaced
 
-### 10. `show_instructions_with_space(text, wait_time=0.1)`
+### 12. `show_instructions_with_space(text, wait_time=0.1)`
 **Purpose**: Improved instruction display with better space key handling
 
-### 11. `get_player_name()`
+### 13. `get_player_name()`
 **Purpose**: Text input for player name
 
 **Features**:
@@ -280,8 +319,19 @@ Bottom (y=-0.20):[Your Card 1][Your Card 2][Your Card 3]
 - Enter to confirm
 - Escape to quit
 - Accepts alphanumeric + space, underscore, hyphen
+- **Fixed**: Space key now adds actual space character, not "space" text
 
-### 12. `save_results_to_spreadsheet(player_name, trial_results)`
+### 14. `save_turn_log(player_name, trial_number, turn_logs)`
+**Purpose**: Save detailed turn-by-turn log to CSV
+
+**File Format** (`turn_by_turn_log.csv`):
+```
+Player_Name,Trial,Turn,Player,Action,Details,RT_Seconds,Timestamp
+John,1,1,Participant,Hint,Card 1 color: yellow,2.34,2025-10-14 15:30:45
+John,1,2,AI,Hint,Your card 2 position: up,,2025-10-14 15:30:47
+```
+
+### 15. `save_results_to_spreadsheet(player_name, trial_results)`
 **Purpose**: Save trial results to CSV
 
 **File Format** (`player_accuracy.csv`):
@@ -291,11 +341,54 @@ John,1,2,145.32,2:25,2025-10-14 15:30:45
 John,2,3,132.18,2:12,2025-10-14 15:30:45
 ```
 
-**Behavior**:
-- Creates file if doesn't exist
-- Appends to existing file
-- Writes header only once
-- Timestamps with date and time
+---
+
+## Mouse/Touch Interface
+
+### Overview
+The game uses a mouse/touch-based interface instead of keyboard input for better accessibility and touch screen compatibility.
+
+### Interface Components
+
+#### 1. **Action Buttons**
+- **HINT**: Click to give hint about AI's cards
+- **PLAY**: Click to play one of your cards
+- **REPLACE**: Click to replace one of your cards
+
+#### 2. **Card Regions**
+- **AI Cards (Top Row)**: Clickable for hint selection
+- **Sequence Slots (Middle Row)**: Clickable for card placement
+- **Participant Cards (Bottom Row)**: Clickable for play/replace actions
+
+#### 3. **Visual Feedback**
+- **Red Borders**: Highlight selected cards
+- **Colored Squares**: Show color hints on participant cards
+- **White Arrows**: Show position hints on participant cards
+
+### Interaction Flow
+
+#### Hint Action:
+1. Click **HINT** button
+2. Click on AI card (top row)
+3. Click **COLOR** or **POSITION** button
+4. AI receives hint and may play card
+
+#### Play Action:
+1. Click **PLAY** button
+2. Click on your card (bottom row)
+3. Click on sequence slot (middle row)
+4. Card is placed and replacement drawn
+
+#### Replace Action:
+1. Click **REPLACE** button
+2. Click on your card (bottom row)
+3. Card is replaced and hints cleared
+
+### Touch Screen Compatibility
+- **Click regions**: 0.20 x 0.20 units (adequate for finger touch)
+- **Button size**: 0.15 x 0.06 units (touch-friendly)
+- **Visual feedback**: Immediate highlighting on touch
+- **No multi-touch**: Single touch only (PsychoPy limitation)
 
 ---
 
@@ -311,10 +404,10 @@ def __init__(self, true_sequence, participant_cards):
 ```
 
 **AI Knowledge**:
-- Knows true sequence (game objective)
-- Can see participant's cards
-- Cannot see its own cards
--  Must rely on hints to learn about own cards (color and positino info required to play)
+- ✅ Knows true sequence (game objective)
+- ✅ Can see participant's cards
+- ❌ Cannot see its own cards
+- ❌ Must rely on hints to learn about own cards
 
 **Data Structures**:
 
@@ -544,7 +637,7 @@ if card_info['color'] and card_info['position']:
 
 ## Game Flow
 
-### Function: `run_single_trial(trial_number)`
+### Function: `run_single_trial(trial_number, player_name)`
 
 #### Phase 1: Balanced Game Setup
 
@@ -580,57 +673,57 @@ if missing_cards:
     print("⚠️ ERROR: Missing cards after initial distribution")
 ```
 
-#### Phase 2: Encoding (Study Phase)
+#### Phase 2: Sequential Encoding (Study Phase)
 
 **Process**:
 1. Display instruction
-2. Show each card in sequence for 0.8 seconds
-3. Blank screen for 0.3 seconds between cards
-4. Total study time: ~3.3 seconds
+2. **Sequential display**: Show cards one by one
+   - Card 1 appears for 1.5 seconds
+   - Cards 1+2 appear for 1.5 seconds  
+   - Cards 1+2+3 appear for 1.5 seconds
+3. Total study time: ~4.5 seconds
 
-**Purpose**: Participant memorizes the target sequence
+**Purpose**: Participant memorizes the target sequence with cumulative exposure
 
-#### Phase 3: Gameplay Loop
+#### Phase 3: Mouse-Based Gameplay Loop
 
 **Loop Condition**: `while any(x is None for x in played_sequence)`
 - Continues until all 3 slots filled
 
 **Turn Structure**:
 
-**Participant Turn** (action = h/p/r):
+**Participant Turn**:
 
-1. **Hint (h)**:
-   - Select AI card (1-3)
-   - Select hint type (1=Color, 2=Position)
-   - Display hint message
-   - AI receives hint and decides whether to play
-   - If AI can play (knows both properties):
-     - Play card immediately
-     - Draw replacement (prioritizing missing sequence cards)
-   - Else: AI keeps card
+1. **Hint Action**:
+   - Click **HINT** button
+   - Click on AI card (top row)
+   - Click **COLOR** or **POSITION** button
+   - AI receives hint and may play immediately
+   - **Log**: Action, target card, hint type, reaction time
 
-2. **Play (p)**:
-   - Select which of own cards to play (blind!)
-   - Select target slot (1-3)
-   - Validate slot not taken
-   - Place card in sequence
-   - Update AI knowledge
-   - Draw replacement card
+2. **Play Action**:
+   - Click **PLAY** button
+   - Click on participant card (bottom row)
+   - Click on sequence slot (middle row)
+   - Card is placed and replacement drawn
+   - **Log**: Action, card played, slot, reaction time
 
-3. **Replace (r)**:
-   - Select card to replace
-   - Draw new card (prioritizing missing sequence cards)
-   - Update AI's participant_cards tracking
+3. **Replace Action**:
+   - Click **REPLACE** button
+   - Click on participant card (bottom row)
+   - Card is replaced and hints cleared
+   - **Log**: Action, card replaced, reaction time
 
 **AI Turn**:
 
 1. **Get Hint Strategy**:
    - AI calculates optimal hint
+   - Updates participant_hints dictionary for visual display
    - If has useful hint: give hint to participant
    - Else: replace a card (avoiding hinted cards)
 
 2. **Display Action**:
-   - Show hint message (5 seconds)
+   - Show hint message (4 seconds)
    - Or show replacement message (2.5 seconds)
    - If stalling (rounds_without_play ≥ 2), display warning
 
@@ -652,6 +745,10 @@ Target Sequence:  [Card1] [Card2] [Card3]
 Your Sequence:    [Card1] [Card2] [Card3]
 Score: 2/3
 ```
+
+**Data Saving**:
+- Save turn-by-turn log to `turn_by_turn_log.csv`
+- Save trial results to `player_accuracy.csv`
 
 **Time Tracking**:
 ```python
@@ -676,18 +773,18 @@ time_formatted = f"{minutes}:{seconds:02d}"
 ### Main Game Flow (Two Trials)
 
 **Steps**:
-1. Get player name (text input)
+1. Get player name (text input with space support)
 2. Welcome message
-3. Show instructions (H/P/R actions)
-4. **Trial 1**: Run complete trial
+3. Show instructions (mouse/touch interface)
+4. **Trial 1**: Run complete trial with turn logging
 5. Show Trial 1 summary
-6. **Trial 2**: Run complete trial
+6. **Trial 2**: Run complete trial with turn logging
 7. Show Trial 2 summary
 8. **Final Summary**: 
    - Individual scores
    - Total score (out of 6)
    - Average time
-9. Save results to CSV
+9. Save results to CSV files
 10. Thank you message
 
 ---
@@ -721,6 +818,26 @@ time_formatted = f"{minutes}:{seconds:02d}"
 }
 ```
 
+### Visual Hint Storage
+```python
+participant_hints = {
+    0: {'color': 'yellow', 'position': None},
+    1: {'color': None, 'position': 'up'},
+    2: {'color': 'blue', 'position': 'right'}
+}
+```
+
+### Turn Log Entry
+```python
+{
+    'turn': 1,
+    'player': 'Participant' or 'AI',
+    'action': 'Hint', 'Play', 'Replace', or 'Wait',
+    'details': 'Card 1 color: yellow',
+    'rt': 2.34  # Reaction time in seconds
+}
+```
+
 ### Trial Results
 ```python
 {
@@ -735,37 +852,62 @@ time_formatted = f"{minutes}:{seconds:02d}"
 
 ## Key Design Decisions
 
-### 1. Balanced Card Distribution
+### 1. Mouse/Touch Interface
+**Problem**: Keyboard interface not suitable for touch screens
+
+**Solution**: Mouse-based clicking with visual feedback and touch-friendly regions
+
+### 2. Visual Hint System
+**Problem**: Participants forget hints given by AI
+
+**Solution**: Colored squares and arrows on participant cards show accumulated hints
+
+### 3. Sequential Encoding
+**Problem**: Simultaneous display of all cards may be overwhelming
+
+**Solution**: Cards appear cumulatively (1, then 1+2, then 1+2+3) for better memorization
+
+### 4. Persistent Display
+**Problem**: Screen changes disrupt game flow
+
+**Solution**: All cards stay visible throughout gameplay with dynamic updates
+
+### 5. Turn-by-Turn Logging
+**Problem**: Need detailed behavioral data for analysis
+
+**Solution**: Log every action with reaction times to `turn_by_turn_log.csv`
+
+### 6. Balanced Card Distribution
 **Problem**: If one player has all sequence cards, the other player is useless
 
 **Solution**: Randomly split sequence cards 1-2 or 2-1 between players
 
-### 2. Missing Card Recovery
+### 7. Missing Card Recovery
 **Problem**: If a sequence card gets replaced, game becomes impossible
 
 **Solution**: `draw_new_card()` prioritizes missing sequence cards when drawing replacements
 
-### 3. Realistic AI Constraints
+### 8. Realistic AI Constraints
 **Problem**: If AI is omniscient, game is too easy and unrealistic
 
 **Solution**: AI can only play cards after receiving hints about BOTH color AND position
 
-### 4. Stall Detection
+### 9. Stall Detection
 **Problem**: Players can get stuck in infinite hint loops
 
 **Solution**: Track rounds without progress and trigger AI hint-backs
 
-### 5. Intelligent Card Replacement
+### 10. Intelligent Card Replacement
 **Problem**: AI might replace cards it has hints about
 
 **Solution**: AI never replaces hinted cards unless certain they're not in sequence
 
-### 6. Dynamic Participant Card Tracking
+### 11. Dynamic Participant Card Tracking
 **Problem**: AI giving hints about cards participant replaced
 
 **Solution**: AI updates `participant_cards` whenever participant replaces a card
 
-### 7. Urgency Scoring
+### 12. Urgency Scoring
 **Problem**: AI doesn't know which hints are most useful
 
 **Solution**: Calculate urgency based on:
@@ -793,15 +935,35 @@ time_formatted = f"{minutes}:{seconds:02d}"
   - Strategy efficiency
 - **Total for 2 trials**: 4-10 minutes
 
+### Data Collection
+- **Turn-by-turn log**: Detailed CSV with reaction times
+- **Trial summary**: Overall performance metrics
+- **File sizes**: Minimal (text-based CSV files)
+
 ---
-### Caveats
+
+## Caveats
+
+### Game Mechanics
 - At any given time, a card from the current sequence will be in play
-- The AI always plays the correct card
+- The AI always plays the correct card when it has sufficient information
 - The AI only hints if you have cards that should be in the sequence
-- The AI will wait for BOTH position and color information before placing a card. It may not utilize hints in an optimal way.
+- The AI will wait for BOTH position and color information before placing a card
 - If you hint at a card that's not in the sequence, the AI may ignore your hint (unless you've hinted all info about each card in their deck already -- then it will decide to replace)
-  
+
+### Interface Limitations
+- **Single touch only**: PsychoPy doesn't handle multi-touch
+- **Touch precision**: Fingers are less precise than mouse cursors
+- **Accidental touches**: Easier to trigger accidentally than mouse clicks
+
+### Technical Considerations
+- **Font rendering**: Arrow characters may vary across systems
+- **Window sizing**: May need adjustment for different screen sizes
+- **Touch regions**: May need enlargement for very small screens
+
+---
+
 ## Conclusion
 
-The optimal AI provides a challenging but fair partner that helps participants succeed while requiring strategic thinking and memory.
+The optimal AI provides a challenging but fair partner that helps participants succeed while requiring strategic thinking and memory. The mouse/touch interface makes the game accessible on various devices while the visual hint system and turn-by-turn logging provide rich data for analysis.
 
