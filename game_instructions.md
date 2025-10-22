@@ -1,97 +1,58 @@
-# How to play
+# How to Play the Memory Card Game
 
 ## Set up
 1. Generate stimuli using `generate_stimuli.py` into a folder called `Shapes`. The shapes have also been uploaded here in a compressed file called `Shapes.zip` for ease. 
 2. Set up and activate a conda environment with PsychoPy. 
-3. In Terminal, type : `python task_v0.0py`
+3. In Terminal, type : `python task_v0.1.py`
 4. Follow the instructions to play the game!
    
 ## Goal
 Work with an AI partner (who has seen the same sequence) to recreate a sequence of 3 cards in the correct order.
-<p align="center">
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 56 43 AM" src="https://github.com/user-attachments/assets/813b90ee-7c16-48e4-babc-8c695cfbcf0f" />
-</p>
 
 ## The Twist
 - You **cannot see your own cards** (they're shown as black boxes to you)
-<p align="center">
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 57 16 AM" src="https://github.com/user-attachments/assets/0dae31f8-0b12-4e4f-a74b-ee543618a9ca" />
-</p>
-
 - But you **can see your partner's cards** (the AI's cards)
-  
-<p align="center">
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 58 02 AM" src="https://github.com/user-attachments/assets/77c01ed6-602d-42dc-ace1-ae651264d7bc" />
-</p>
-
 - Your partner can see your cards but not their own!
-  
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 10 AM" src="https://github.com/user-attachments/assets/50b8875b-8a4d-42de-bbfe-ff12ca819cd7" />
-</p>
 
 ## Setup
-1. At the start, you'll be shown a **target sequence** of 3 colored shapes
+1. At the start, you'll be shown a **target sequence** of 3 colored shapes (cards appear one by one: first card, then first+second, then all three)
 2. You need to memorize this sequence
 3. Then you'll work with the AI to recreate it
 
 ## On Your Turn, You Can Do 3 Things:
 
-### Press H (Hint)
+### Click HINT
 Tell the AI partner about one of their cards
-- Choose which card (1, 2, or 3)
-- 
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 45 AM" src="https://github.com/user-attachments/assets/04c7dee2-8433-4a7f-990c-ac0b5ab31c39" />
-</p>
+- Click the **HINT** button
+- Click on one of the AI's cards (top row) to hint about
+- Click **COLOR** or **POSITION** to specify what type of hint to give
+- The AI will receive your hint and may play a card if it has enough information
 
-- Tell them either its **COLOR** or its **POSITION** (1 or 2)
-  
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 08 AM" src="https://github.com/user-attachments/assets/964c3f9a-6b6d-440d-8921-b680c6afb0dc" />
-</p>
-<br>
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 27 AM" src="https://github.com/user-attachments/assets/6201b503-838d-476d-8f52-82c7d03c57ba" />
-</p>
-
-
-### Press P (Play)
+### Click PLAY
 Play one of your own cards
-- Choose which of your 3 cards to play (1, 2, or 3)
-<br>
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 01 53 AM" src="https://github.com/user-attachments/assets/ed132214-a3e5-4ca9-9ac1-2fecb097396b" />
-</p>
+- Click the **PLAY** button
+- Click on one of YOUR cards (bottom row) to play
+- Click on a SLOT (middle row) to place the card
+- ⚠️ Remember: you can't see your own cards!
 
-- Choose which slot (1, 2, or 3) to put it in
-  
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 02 08 AM" src="https://github.com/user-attachments/assets/10c9e699-d0a0-4df2-b99f-b6e4cb59292c" />
-</p>
-<br>
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 12 58 55 AM" src="https://github.com/user-attachments/assets/48f82db3-cb56-4f15-87b0-0ea6e7da8aca" />
-</p>
-
-### Press R (Replace)
+### Click REPLACE
 Swap out one of your cards for a new one
+- Click the **REPLACE** button
+- Click on one of YOUR cards (bottom row) to replace
 - Use this if you think you have a useless card
+
+## Visual Hint System
+Your cards (bottom row) will show hints as you receive them:
+- **Colored squares**: When AI tells you the color of a card
+- **White arrows with black outline**: When AI tells you the position of a card
+  - `^` = up
+  - `v` = down  
+  - `<` = left
+  - `>` = right
 
 ## How the AI Helps You
 - The AI will give you hints about **your** cards
-  
-<p align="center">
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 59 28 AM" src="https://github.com/user-attachments/assets/ba0f3b5b-b1a0-4293-bc53-7b375b0c5875" />
-</p>
-
 - When the AI has enough information (both color AND position), it will play its cards automatically
-  
-<p align="center">
-<img width="300" height="200" alt="Screenshot 2025-10-14 at 12 59 49 AM" src="https://github.com/user-attachments/assets/8e7deb46-337a-4046-8e4d-76fecf3c1f84" />
-</p>
-<br>
-
 - Work together strategically!
 
 ## Winning
@@ -99,19 +60,20 @@ Swap out one of your cards for a new one
 - You get a score out of 3 (how many cards match in the correct positions)
 - You'll play 2 practice trials
 
-<p align="center">
-<img width="300" height="400" alt="Screenshot 2025-10-14 at 1 00 09 AM" src="https://github.com/user-attachments/assets/caf39ce1-cb1f-47c8-a2b8-38544de48112" />
-</p>
-
 ## Game Flow
-1. **Encoding Phase**: Study the target sequence carefully
+1. **Encoding Phase**: Study the target sequence carefully (cards appear sequentially)
 2. **Gameplay**: Take turns with the AI giving hints, playing cards, or replacing cards
 3. **Completion**: Once all 3 slots are filled, see how well you did!
-4. **Results**: Your score and time will be saved automatically to a spreadsheet called `player_accuracy.csv`
+4. **Results**: Your score, time, and turn-by-turn actions will be saved automatically to spreadsheets:
+   - `player_accuracy.csv` - Overall trial results
+   - `turn_by_turn_log.csv` - Detailed action log with reaction times
 
+## Interface Notes
+- **Mouse/Touch Interface**: Click on cards and buttons to interact
+- **Persistent Display**: All cards stay visible throughout the game
+- **Visual Feedback**: Selected cards are highlighted with red borders
+- **Touch Screen Compatible**: Works well on touch screens
 
-Note: The function `run_localizer` is commented out, hence the localizer will not run. You can uncomment this to try out the localizer. 
+Note: The function `run_localizer` is commented out, hence the localizer will not run. You can uncomment this to try out the localizer.
 
 ---
-
-
