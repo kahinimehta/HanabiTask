@@ -404,10 +404,10 @@ def __init__(self, true_sequence, participant_cards):
 ```
 
 **AI Knowledge**:
-- ✅ Knows true sequence (game objective)
-- ✅ Can see participant's cards
-- ❌ Cannot see its own cards
-- ❌ Must rely on hints to learn about own cards
+- Knows true sequence (game objective)
+- Can see participant's cards
+- Cannot see its own cards
+- Must rely on hints to learn about own cards
 
 **Data Structures**:
 
