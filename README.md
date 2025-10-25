@@ -6,7 +6,7 @@
 5. `Demov2.mp4` - a video demonstration of how to play the game (deprecated: `Demo.mp4`)
 6. `game_instructions.md` - a markdown explaining how to play the game
 7. `pilot_results_summary.pdf` - a summary of the pilot results from version 0.0 of the task
-8. `pilot_results_summary_2.pdf` - a summary of the pilot results from version 0.1 of the task
+8. `pilot_results_2_summary.pdf` - a summary of the pilot results from version 0.1 of the task
 
 Note that Cursor was used to code this task.
 
