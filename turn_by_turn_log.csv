@@ -1,0 +1,348 @@
+player 1,1,1,Participant,Hint,Card 1 color: orange,7.546,10/21/25 20:32
+player 1,1,2,AI,Hint,Your card 3 position: right,,10/21/25 20:32
+player 1,1,3,Participant,Play,Card 3 to Slot 3,2.277,10/21/25 20:32
+player 1,1,4,AI,Replace,Card 2,,10/21/25 20:32
+player 1,1,5,Participant,Hint,Card 1 position: left,2.335,10/21/25 20:32
+player 1,1,5,AI,Play,Slot 2: orange left,,10/21/25 20:32
+player 1,1,6,AI,Replace,Card 1,,10/21/25 20:32
+player 1,1,7,Participant,Replace,Card 3,1.856,10/21/25 20:32
+player 1,1,8,AI,Hint,Your card 3 color: blue,,10/21/25 20:32
+player 1,1,9,Participant,Play,Card 3 to Slot 1,1.85,10/21/25 20:32
+player 1,1,1,AI,Hint,Your card 3 position: up,,10/21/25 20:39
+player 1,1,2,Participant,Play,Card 3 to Slot 3,2.729,10/21/25 20:39
+player 1,1,3,AI,Replace,Card 2,,10/21/25 20:39
+player 1,1,4,Participant,Hint,Card 2 color: cyan,2.029,10/21/25 20:39
+player 1,1,5,AI,Replace,Card 1,,10/21/25 20:39
+player 1,1,6,Participant,Hint,Card 2 position: up,2.276,10/21/25 20:39
+player 1,1,7,AI,Replace,Card 1,,10/21/25 20:39
+player 1,1,8,Participant,Hint,Card 3 color: cyan,3.107,10/21/25 20:39
+player 1,1,9,AI,Replace,Card 1,,10/21/25 20:39
+player 1,1,10,Participant,Hint,Card 3 position: down,3.08,10/21/25 20:39
+player 1,1,10,AI,Play,Slot 1: cyan down,,10/21/25 20:39
+player 1,1,11,AI,Replace,Card 1,,10/21/25 20:39
+player 1,1,12,Participant,Replace,Card 2,1.252,10/21/25 20:39
+player 1,1,13,AI,Hint,Your card 2 color: cyan,,10/21/25 20:39
+player 1,1,14,Participant,Play,Card 2 to Slot 2,2.114,10/21/25 20:39
+player 2,1,1,Participant,Hint,Card 3 color: blue,26.732,10/22/25 15:21
+player 2,1,2,AI,Hint,Your card 3 color: blue,,10/22/25 15:21
+player 2,1,3,Participant,Hint,Card 1 position: right,44.607,10/22/25 15:21
+player 2,1,4,AI,Hint,Your card 3 position: up,,10/22/25 15:21
+player 2,1,5,Participant,Hint,Card 2 color: blue,10.574,10/22/25 15:21
+player 2,1,6,AI,Hint,Your card 3 color: blue,,10/22/25 15:21
+player 2,1,7,Participant,Replace,Card 3,21.52,10/22/25 15:21
+player 2,1,8,AI,Wait,Waiting for more information,,10/22/25 15:21
+player 2,1,9,Participant,Play,Card 1 to Slot 1,18.853,10/22/25 15:21
+player 2,1,10,AI,Wait,Waiting for more information,,10/22/25 15:21
+player 2,1,11,Participant,Hint,Card 2 color: blue,11.435,10/22/25 15:21
+player 2,1,12,AI,Wait,Waiting for more information,,10/22/25 15:21
+player 2,1,13,Participant,Replace,Card 2,12.159,10/22/25 15:21
+player 2,1,14,AI,Hint,Your card 1 position: up,,10/22/25 15:21
+player 2,1,15,Participant,Hint,Card 3 position: left,24.436,10/22/25 15:21
+player 2,1,16,AI,Hint,Your card 1 color: blue,,10/22/25 15:21
+player 2,1,17,Participant,Hint,Card 2 position: right,19.676,10/22/25 15:21
+player 2,1,17,AI,Play,Slot 3: blue right,,10/22/25 15:21
+player 2,1,18,AI,Hint,Your card 1 position: up,,10/22/25 15:21
+player 2,1,19,Participant,Hint,Card 2 position: up,7.522,10/22/25 15:21
+player 2,1,20,AI,Hint,Your card 1 color: blue,,10/22/25 15:21
+player 2,1,21,Participant,Play,Card 1 to Slot 2,6.09,10/22/25 15:21
+player 2,2,1,AI,Hint,Your card 2 color: cyan,,10/22/25 15:27
+player 2,2,2,Participant,Hint,Card 2 color: yellow,12.2,10/22/25 15:27
+player 2,2,3,AI,Hint,Your card 2 position: down,,10/22/25 15:27
+player 2,2,4,Participant,Hint,Card 3 position: down,12.084,10/22/25 15:27
+player 2,2,5,AI,Hint,Your card 2 color: cyan,,10/22/25 15:27
+player 2,2,6,Participant,Hint,Card 3 position: down,13.229,10/22/25 15:27
+player 2,2,7,AI,Hint,Your card 2 position: down,,10/22/25 15:27
+player 2,2,8,Participant,Play,Card 2 to Slot 2,8.617,10/22/25 15:27
+player 2,2,9,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,10,Participant,Hint,Card 3 position: down,9.658,10/22/25 15:27
+player 2,2,11,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,12,Participant,Hint,Card 1 color: blue,8.932,10/22/25 15:27
+player 2,2,13,AI,Wait,Waiting for more information,,10/22/25 15:27
+player 2,2,14,Participant,Hint,Card 3 color: yellow,8.888,10/22/25 15:27
+player 2,2,15,AI,Wait,Waiting for more information,,10/22/25 15:27
+player 2,2,16,Participant,Hint,Card 1 color: blue,14.257,10/22/25 15:27
+player 2,2,17,AI,Wait,Waiting for more information,,10/22/25 15:27
+player 2,2,18,Participant,Hint,Card 2 color: yellow,10.26,10/22/25 15:27
+player 2,2,19,AI,Wait,Waiting for more information,,10/22/25 15:27
+player 2,2,20,Participant,Hint,Card 1 position: up,15.664,10/22/25 15:27
+player 2,2,20,AI,Play,Slot 3: blue up,,10/22/25 15:27
+player 2,2,21,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,22,Participant,Hint,Card 3 color: yellow,10.136,10/22/25 15:27
+player 2,2,23,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,24,Participant,Hint,Card 3 position: down,3.6,10/22/25 15:27
+player 2,2,25,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,26,Participant,Hint,Card 2 color: yellow,3.226,10/22/25 15:27
+player 2,2,27,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,28,Participant,Hint,Card 2 position: right,6.237,10/22/25 15:27
+player 2,2,29,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,30,Participant,Hint,Card 1 color: yellow,7.104,10/22/25 15:27
+player 2,2,31,AI,Replace,Card 2,,10/22/25 15:27
+player 2,2,32,Participant,Hint,Card 1 position: up,6.166,10/22/25 15:27
+player 2,2,33,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,34,Participant,Hint,Card 3 position: down,3.092,10/22/25 15:27
+player 2,2,35,AI,Replace,Card 2,,10/22/25 15:27
+player 2,2,36,Participant,Hint,Card 3 color: yellow,4.243,10/22/25 15:27
+player 2,2,37,AI,Replace,Card 2,,10/22/25 15:27
+player 2,2,38,Participant,Replace,Card 1,7.156,10/22/25 15:27
+player 2,2,39,AI,Replace,Card 1,,10/22/25 15:27
+player 2,2,40,Participant,Play,Card 2 to Slot 1,6.529,10/22/25 15:27
+player 3,1,1,Participant,Hint,Card 1 color: orange,22.688,10/22/25 15:32
+player 3,1,2,AI,Hint,Your card 1 position: up,,10/22/25 15:32
+player 3,1,3,Participant,Play,Card 1 to Slot 2,36.823,10/22/25 15:32
+player 3,1,4,AI,Hint,Your card 2 position: left,,10/22/25 15:32
+player 3,1,5,Participant,Play,Card 2 to Slot 1,9.64,10/22/25 15:32
+player 3,1,6,AI,Replace,Card 2,,10/22/25 15:32
+player 3,1,7,Participant,Hint,Card 3 color: blue,17.558,10/22/25 15:32
+player 3,1,8,AI,Replace,Card 2,,10/22/25 15:32
+player 3,1,9,Participant,Replace,Card 3,8.417,10/22/25 15:32
+player 3,1,10,AI,Replace,Card 2,,10/22/25 15:32
+player 3,1,11,Participant,Replace,Card 3,5.464,10/22/25 15:32
+player 3,1,12,AI,Replace,Card 2,,10/22/25 15:32
+player 3,1,13,Participant,Hint,Card 3 position: left,17.752,10/22/25 15:32
+player 3,1,13,AI,Play,Slot 3: blue left,,10/22/25 15:32
+player 3,2,1,Participant,Hint,Card 3 color: blue,9.889,10/22/25 15:34
+player 3,2,2,AI,Hint,Your card 2 position: up,,10/22/25 15:34
+player 3,2,3,Participant,Play,Card 2 to Slot 2,2.595,10/22/25 15:34
+player 3,2,4,AI,Hint,Your card 3 position: right,,10/22/25 15:34
+player 3,2,5,Participant,Play,Card 3 to Slot 1,2.357,10/22/25 15:34
+player 3,2,6,AI,Replace,Card 2,,10/22/25 15:34
+player 3,2,7,Participant,Hint,Card 3 color: blue,3.832,10/22/25 15:34
+player 3,2,8,AI,Replace,Card 1,,10/22/25 15:34
+player 3,2,9,Participant,Replace,Card 2,9.978,10/22/25 15:34
+player 3,2,10,AI,Hint,Your card 2 color: cyan,,10/22/25 15:34
+player 3,2,11,Participant,Play,Card 2 to Slot 3,2.096,10/22/25 15:34
+player 4,1,1,AI,Hint,Your card 2 color: orange,,10/22/25 16:42
+player 4,1,2,Participant,Hint,Card 3 color: yellow,61.717,10/22/25 16:42
+player 4,1,3,AI,Hint,Your card 2 position: up,,10/22/25 16:42
+player 4,1,4,Participant,Replace,Card 2,2.51,10/22/25 16:42
+player 4,1,5,AI,Replace,Card 2,,10/22/25 16:42
+player 4,1,6,Participant,Replace,Card 1,8.342,10/22/25 16:42
+player 4,1,7,AI,Hint,Your card 1 color: yellow,,10/22/25 16:42
+player 4,1,8,Participant,Replace,Card 1,1.925,10/22/25 16:42
+player 4,1,9,AI,Replace,Card 1,,10/22/25 16:42
+player 4,1,10,Participant,Replace,Card 2,10.971,10/22/25 16:42
+player 4,1,11,AI,Hint,Your card 2 color: cyan,,10/22/25 16:42
+player 4,1,12,Participant,Play,Card 2 to Slot 2,10.072,10/22/25 16:42
+player 4,1,13,AI,Replace,Card 2,,10/22/25 16:42
+player 4,1,14,Participant,Replace,Card 1,8.173,10/22/25 16:42
+player 4,1,15,AI,Hint,Your card 1 color: orange,,10/22/25 16:42
+player 4,1,16,Participant,Play,Card 1 to Slot 1,2.448,10/22/25 16:42
+player 4,1,17,AI,Replace,Card 2,,10/22/25 16:42
+player 4,1,18,Participant,Replace,Card 3,2.879,10/22/25 16:42
+player 4,1,19,AI,Replace,Card 2,,10/22/25 16:42
+player 4,1,20,Participant,Replace,Card 3,3.261,10/22/25 16:42
+player 4,1,21,AI,Replace,Card 2,,10/22/25 16:42
+player 4,1,22,Participant,Hint,Card 2 position: right,9.068,10/22/25 16:42
+player 4,1,23,AI,Replace,Card 1,,10/22/25 16:42
+player 4,1,24,Participant,Replace,Card 3,3.028,10/22/25 16:42
+player 4,1,25,AI,Hint,Your card 3 position: right,,10/22/25 16:42
+player 4,1,26,Participant,Play,Card 3 to Slot 3,4.15,10/22/25 16:42
+player 4,2,1,AI,Hint,Your card 3 color: blue,,10/22/25 16:45
+player 4,2,2,Participant,Hint,Card 2 position: down,4.839,10/22/25 16:45
+player 4,2,3,AI,Hint,Your card 3 position: right,,10/22/25 16:45
+player 4,2,4,Participant,Play,Card 3 to Slot 3,5.171,10/22/25 16:45
+player 4,2,5,AI,Replace,Card 3,,10/22/25 16:45
+player 4,2,6,Participant,Replace,Card 1,3.092,10/22/25 16:45
+player 4,2,7,AI,Hint,Your card 1 position: left,,10/22/25 16:45
+player 4,2,8,Participant,Play,Card 1 to Slot 1,2.51,10/22/25 16:45
+player 4,2,9,AI,Replace,Card 1,,10/22/25 16:45
+player 4,2,10,Participant,Hint,Card 2 position: down,11.696,10/22/25 16:45
+player 4,2,11,AI,Replace,Card 1,,10/22/25 16:45
+player 4,2,12,Participant,Replace,Card 2,3.992,10/22/25 16:45
+player 4,2,13,AI,Replace,Card 3,,10/22/25 16:45
+player 4,2,14,Participant,Replace,Card 2,7.078,10/22/25 16:45
+player 4,2,15,AI,Replace,Card 1,,10/22/25 16:45
+player 4,2,16,Participant,Hint,Card 2 position: down,6.369,10/22/25 16:45
+player 4,2,17,AI,Replace,Card 3,,10/22/25 16:45
+player 4,2,18,Participant,Hint,Card 3 color: blue,4.593,10/22/25 16:45
+player 4,2,19,AI,Replace,Card 1,,10/22/25 16:45
+player 4,2,20,Participant,Hint,Card 1 color: orange,3.006,10/22/25 16:45
+player 4,2,21,AI,Wait,Waiting for more information,,10/22/25 16:45
+player 4,2,22,Participant,Hint,Card 2 position: down,2.947,10/22/25 16:45
+player 4,2,23,AI,Wait,Waiting for more information,,10/22/25 16:45
+player 4,2,24,Participant,Replace,Card 2,1.223,10/22/25 16:45
+player 4,2,25,AI,Wait,Waiting for more information,,10/22/25 16:45
+player 4,2,26,Participant,Replace,Card 2,4.391,10/22/25 16:45
+player 4,2,27,AI,Wait,Waiting for more information,,10/22/25 16:45
+player 4,2,28,Participant,Play,Card 2 to Slot 2,2.381,10/22/25 16:45
+player 5,1,1,Participant,Hint,Card 1 color: yellow,11.565,10/22/25 16:50
+player 5,1,2,AI,Hint,Your card 1 position: down,,10/22/25 16:50
+player 5,1,3,Participant,Hint,Card 2 position: up,15.082,10/22/25 16:50
+player 5,1,4,AI,Hint,Your card 1 color: yellow,,10/22/25 16:50
+player 5,1,5,Participant,Play,Card 1 to Slot 1,5.091,10/22/25 16:50
+player 5,1,6,AI,Replace,Card 3,,10/22/25 16:50
+player 5,1,7,Participant,Hint,Card 2 position: up,3.621,10/22/25 16:50
+player 5,1,8,AI,Replace,Card 3,,10/22/25 16:50
+player 5,1,9,Participant,Hint,Card 3 position: left,11.059,10/22/25 16:50
+player 5,1,10,AI,Wait,Waiting for more information,,10/22/25 16:50
+player 5,1,11,Participant,Hint,Card 3 color: orange,6.676,10/22/25 16:50
+player 5,1,11,AI,Play,Slot 2: orange left,,10/22/25 16:50
+player 5,1,12,AI,Replace,Card 3,,10/22/25 16:50
+player 5,1,13,Participant,Hint,Card 2 color: blue,7.036,10/22/25 16:50
+player 5,1,13,AI,Play,Slot 3: blue up,,10/22/25 16:50
+player 5,2,1,Participant,Hint,Card 2 color: cyan,6.762,10/22/25 16:52
+player 5,2,2,AI,Hint,Your card 1 position: down,,10/22/25 16:52
+player 5,2,3,Participant,Hint,Card 2 position: left,3.989,10/22/25 16:52
+player 5,2,3,AI,Play,Slot 2: cyan left,,10/22/25 16:52
+player 5,2,4,AI,Hint,Your card 1 color: cyan,,10/22/25 16:52
+player 5,2,5,Participant,Play,Card 1 to Slot 3,2.277,10/22/25 16:52
+player 5,2,6,AI,Hint,Your card 3 position: up,,10/22/25 16:52
+player 5,2,7,Participant,Replace,Card 2,3.995,10/22/25 16:52
+player 5,2,8,AI,Hint,Your card 3 color: cyan,,10/22/25 16:52
+player 5,2,9,Participant,Play,Card 3 to Slot 1,2.505,10/22/25 16:52
+player 6,1,1,AI,Hint,Your card 1 color: cyan,,10/23/25 12:19
+player 6,1,2,Participant,Hint,Card 3 color: yellow,9.566,10/23/25 12:19
+player 6,1,3,AI,Hint,Your card 1 position: right,,10/23/25 12:19
+player 6,1,4,Participant,Play,Card 1 to Slot 1,5.033,10/23/25 12:19
+player 6,1,5,AI,Hint,Your card 2 color: cyan,,10/23/25 12:19
+player 6,1,6,Participant,Hint,Card 3 position: right,6.275,10/23/25 12:19
+player 6,1,6,AI,Play,Slot 3: yellow right,,10/23/25 12:19
+player 6,1,7,AI,Hint,Your card 2 position: down,,10/23/25 12:19
+player 6,1,8,Participant,Play,Card 2 to Slot 2,2.062,10/23/25 12:19
+player 6,2,1,Participant,Hint,Card 2 color: cyan,10.664,10/23/25 12:21
+player 6,2,2,AI,Hint,Your card 1 color: blue,,10/23/25 12:21
+player 6,2,3,Participant,Hint,Card 2 position: up,4.192,10/23/25 12:21
+player 6,2,3,AI,Play,Slot 3: cyan up,,10/23/25 12:21
+player 6,2,4,AI,Hint,Your card 1 position: right,,10/23/25 12:21
+player 6,2,5,Participant,Play,Card 1 to Slot 1,1.999,10/23/25 12:21
+player 6,2,6,AI,Hint,Your card 3 color: yellow,,10/23/25 12:21
+player 6,2,7,Participant,Hint,Card 3 position: left,17.929,10/23/25 12:21
+player 6,2,8,AI,Hint,Your card 3 position: left,,10/23/25 12:21
+player 6,2,9,Participant,Play,Card 3 to Slot 2,2.076,10/23/25 12:21
+player 7,1,1,AI,Hint,Your card 3 color: blue,,10/23/25 16:02
+player 7,1,2,Participant,Hint,Card 2 position: up,22.817,10/23/25 16:02
+player 7,1,3,AI,Hint,Your card 3 position: right,,10/23/25 16:02
+player 7,1,4,Participant,Play,Card 3 to Slot 2,5.901,10/23/25 16:02
+player 7,1,5,AI,Replace,Card 1,,10/23/25 16:02
+player 7,1,6,Participant,Hint,Card 2 color: blue,10.733,10/23/25 16:02
+player 7,1,6,AI,Play,Slot 3: blue up,,10/23/25 16:02
+player 7,1,7,AI,Replace,Card 3,,10/23/25 16:02
+player 7,1,8,Participant,Hint,Card 2 position: right,18.421,10/23/25 16:02
+player 7,1,9,AI,Replace,Card 3,,10/23/25 16:02
+player 7,1,10,Participant,Hint,Card 2 color: cyan,7.976,10/23/25 16:02
+player 7,1,10,AI,Play,Slot 1: cyan right,,10/23/25 16:02
+player 7,2,1,AI,Hint,Your card 1 color: yellow,,10/23/25 16:05
+player 7,2,2,Participant,Hint,Card 1 position: left,12.84,10/23/25 16:05
+player 7,2,3,AI,Hint,Your card 1 position: up,,10/23/25 16:05
+player 7,2,4,Participant,Hint,Card 1 color: blue,7.451,10/23/25 16:05
+player 7,2,4,AI,Play,Slot 3: blue left,,10/23/25 16:05
+player 7,2,5,AI,Hint,Your card 1 color: yellow,,10/23/25 16:05
+player 7,2,6,Participant,Play,Card 1 to Slot 1,9.968,10/23/25 16:05
+player 7,2,7,AI,Replace,Card 3,,10/23/25 16:05
+player 7,2,8,Participant,Hint,Card 2 position: down,22.402,10/23/25 16:05
+player 7,2,9,AI,Replace,Card 1,,10/23/25 16:05
+player 7,2,10,Participant,Hint,Card 1 position: right,5.541,10/23/25 16:05
+player 7,2,11,AI,Replace,Card 3,,10/23/25 16:05
+player 7,2,12,Participant,Hint,Card 1 color: yellow,2.016,10/23/25 16:05
+player 7,2,12,AI,Play,Slot 2: yellow right,,10/23/25 16:05
+player 8,1,1,AI,Hint,Your card 2 color: cyan,,10/23/25 16:09
+player 8,1,2,Participant,Hint,Card 1 color: orange,10.63,10/23/25 16:09
+player 8,1,3,AI,Hint,Your card 2 position: left,,10/23/25 16:09
+player 8,1,4,Participant,Play,Card 2 to Slot 3,2.787,10/23/25 16:09
+player 8,1,5,AI,Replace,Card 3,,10/23/25 16:09
+player 8,1,6,Participant,Hint,Card 1 position: left,8.241,10/23/25 16:09
+player 8,1,6,AI,Play,Slot 2: orange left,,10/23/25 16:09
+player 8,1,7,AI,Replace,Card 3,,10/23/25 16:09
+player 8,1,8,Participant,Hint,Card 2 color: blue,5.211,10/23/25 16:09
+player 8,1,9,AI,Replace,Card 1,,10/23/25 16:09
+player 8,1,10,Participant,Hint,Card 2 position: down,2.814,10/23/25 16:09
+player 8,1,10,AI,Play,Slot 1: blue down,,10/23/25 16:09
+player 8,2,1,Participant,Hint,Card 1 color: yellow,21.922,10/23/25 16:10
+player 8,2,2,AI,Hint,Your card 1 position: down,,10/23/25 16:10
+player 8,2,3,Participant,Hint,Card 1 position: right,3.566,10/23/25 16:10
+player 8,2,3,AI,Play,Slot 2: yellow right,,10/23/25 16:10
+player 8,2,4,AI,Hint,Your card 1 color: yellow,,10/23/25 16:10
+player 8,2,5,Participant,Play,Card 1 to Slot 3,3.043,10/23/25 16:10
+player 8,2,6,AI,Hint,Your card 2 position: left,,10/23/25 16:10
+player 8,2,7,Participant,Play,Card 2 to Slot 1,9.635,10/23/25 16:10
+player 9,1,1,AI,Hint,Your card 1 color: yellow,,10/23/25 19:02
+player 9,1,2,Participant,Hint,Card 2 position: left,13.726,10/23/25 19:02
+player 9,1,3,AI,Hint,Your card 1 position: right,,10/23/25 19:02
+player 9,1,4,Participant,Play,Card 1 to Slot 1,3.9,10/23/25 19:02
+player 9,1,5,AI,Hint,Your card 2 color: orange,,10/23/25 19:02
+player 9,1,6,Participant,Hint,Card 2 color: yellow,4.645,10/23/25 19:02
+player 9,1,6,AI,Play,Slot 3: yellow left,,10/23/25 19:02
+player 9,1,7,AI,Hint,Your card 2 position: up,,10/23/25 19:02
+player 9,1,8,Participant,Play,Card 2 to Slot 2,2.521,10/23/25 19:02
+player 9,2,1,Participant,Hint,Card 1 color: orange,26.941,10/23/25 19:04
+player 9,2,2,AI,Hint,Your card 1 color: cyan,,10/23/25 19:04
+player 9,2,3,Participant,Hint,Card 1 position: right,4.453,10/23/25 19:04
+player 9,2,3,AI,Play,Slot 2: orange right,,10/23/25 19:04
+player 9,2,4,AI,Hint,Your card 1 position: left,,10/23/25 19:04
+player 9,2,5,Participant,Play,Card 1 to Slot 3,2.771,10/23/25 19:04
+player 9,2,6,AI,Hint,Your card 3 position: up,,10/23/25 19:04
+player 9,2,7,Participant,Replace,Card 2,8.693,10/23/25 19:04
+player 9,2,8,AI,Hint,Your card 3 color: yellow,,10/23/25 19:04
+player 9,2,9,Participant,Play,Card 3 to Slot 1,2.672,10/23/25 19:04
+player 10,1,1,AI,Hint,Your card 3 color: yellow,,10/23/25 22:54
+player 10,1,2,Participant,Play,Card 3 to Slot 1,7.362,10/23/25 22:54
+player 10,1,3,AI,Replace,Card 1,,10/23/25 22:54
+player 10,1,4,Participant,Hint,Card 2 color: orange,7.172,10/23/25 22:54
+player 10,1,5,AI,Replace,Card 3,,10/23/25 22:54
+player 10,1,6,Participant,Hint,Card 3 color: blue,7.331,10/23/25 22:54
+player 10,1,7,AI,Replace,Card 1,,10/23/25 22:54
+player 10,1,8,Participant,Hint,Card 2 position: down,7.134,10/23/25 22:54
+player 10,1,8,AI,Play,Slot 2: orange down,,10/23/25 22:54
+player 10,1,9,AI,Replace,Card 1,,10/23/25 22:54
+player 10,1,10,Participant,Hint,Card 3 position: down,5.766,10/23/25 22:54
+player 10,1,10,AI,Play,Slot 3: blue down,,10/23/25 22:54
+player 10,2,1,AI,Hint,Your card 2 position: left,,10/23/25 22:56
+player 10,2,2,Participant,Play,Card 2 to Slot 2,14.977,10/23/25 22:56
+player 10,2,3,AI,Replace,Card 2,,10/23/25 22:56
+player 10,2,4,Participant,Hint,Card 3 position: up,6.697,10/23/25 22:56
+player 10,2,5,AI,Replace,Card 2,,10/23/25 22:56
+player 10,2,6,Participant,Hint,Card 2 position: left,4.339,10/23/25 22:56
+player 10,2,7,AI,Replace,Card 1,,10/23/25 22:56
+player 10,2,8,Participant,Hint,Card 2 color: yellow,3.45,10/23/25 22:56
+player 10,2,8,AI,Play,Slot 1: yellow left,,10/23/25 22:56
+player 10,2,9,AI,Replace,Card 2,,10/23/25 22:56
+player 10,2,10,Participant,Hint,Card 3 position: up,3.452,10/23/25 22:56
+player 10,2,11,AI,Replace,Card 1,,10/23/25 22:56
+player 10,2,12,Participant,Hint,Card 3 color: yellow,3.763,10/23/25 22:56
+player 10,2,12,AI,Play,Slot 3: yellow up,,10/23/25 22:56
+player 11,1,1,Participant,Hint,Card 1 position: right,6.706,10/24/25 13:19
+player 11,1,2,AI,Hint,Your card 2 position: left,,10/24/25 13:19
+player 11,1,3,Participant,Hint,Card 1 color: blue,5.858,10/24/25 13:19
+player 11,1,3,AI,Play,Slot 3: blue right,,10/24/25 13:19
+player 11,1,4,AI,Hint,Your card 2 color: blue,,10/24/25 13:19
+player 11,1,5,Participant,Play,Card 2 to Slot 2,2.043,10/24/25 13:19
+player 11,1,6,AI,Replace,Card 3,,10/24/25 13:19
+player 11,1,7,Participant,Replace,Card 1,5.52,10/24/25 13:19
+player 11,1,8,AI,Hint,Your card 1 color: orange,,10/24/25 13:19
+player 11,1,9,Participant,Hint,Card 3 position: down,10.161,10/24/25 13:19
+player 11,1,10,AI,Hint,Your card 1 position: right,,10/24/25 13:19
+player 11,1,11,Participant,Play,Card 1 to Slot 1,2.419,10/24/25 13:19
+player 11,2,1,Participant,Hint,Card 1 color: cyan,4.866,10/24/25 13:20
+player 11,2,2,AI,Hint,Your card 3 position: left,,10/24/25 13:20
+player 11,2,3,Participant,Play,Card 3 to Slot 3,2.304,10/24/25 13:20
+player 11,2,4,AI,Replace,Card 2,,10/24/25 13:20
+player 11,2,5,Participant,Hint,Card 1 position: up,3.975,10/24/25 13:20
+player 11,2,5,AI,Play,Slot 1: cyan up,,10/24/25 13:20
+player 11,2,6,AI,Replace,Card 2,,10/24/25 13:20
+player 11,2,7,Participant,Hint,Card 1 position: down,2.76,10/24/25 13:20
+player 11,2,8,AI,Replace,Card 2,,10/24/25 13:20
+player 11,2,9,Participant,Hint,Card 1 color: cyan,2.268,10/24/25 13:20
+player 11,2,9,AI,Play,Slot 2: cyan down,,10/24/25 13:20
+player 12,1,1,AI,Hint,Your card 1 position: down,,10/24/25 13:48
+player 12,1,2,Participant,Hint,Card 2 color: blue,14.798,10/24/25 13:48
+player 12,1,3,AI,Hint,Your card 1 color: cyan,,10/24/25 13:48
+player 12,1,4,Participant,Play,Card 1 to Slot 3,8.598,10/24/25 13:48
+player 12,1,5,AI,Replace,Card 1,,10/24/25 13:48
+player 12,1,6,Participant,Hint,Card 2 position: right,5.226,10/24/25 13:48
+player 12,1,6,AI,Play,Slot 2: blue right,,10/24/25 13:48
+player 12,1,7,AI,Replace,Card 1,,10/24/25 13:48
+player 12,1,8,Participant,Hint,Card 3 position: left,6.032,10/24/25 13:48
+player 12,1,9,AI,Replace,Card 2,,10/24/25 13:48
+player 12,1,10,Participant,Hint,Card 3 color: yellow,6.606,10/24/25 13:48
+player 12,1,10,AI,Play,Slot 1: yellow left,,10/24/25 13:48
+player 12,2,1,Participant,Hint,Card 1 color: yellow,11.052,10/24/25 13:51
+player 12,2,2,AI,Hint,Your card 2 position: left,,10/24/25 13:51
+player 12,2,3,Participant,Hint,Card 1 position: up,2.905,10/24/25 13:51
+player 12,2,3,AI,Play,Slot 3: yellow up,,10/24/25 13:51
+player 12,2,4,AI,Hint,Your card 2 color: blue,,10/24/25 13:51
+player 12,2,5,Participant,Hint,Card 3 color: orange,3.226,10/24/25 13:51
+player 12,2,6,AI,Hint,Your card 2 position: left,,10/24/25 13:51
+player 12,2,7,Participant,Hint,Card 3 position: up,12.656,10/24/25 13:51
+player 12,2,7,AI,Play,Slot 1: orange up,,10/24/25 13:51
+player 12,2,8,AI,Hint,Your card 2 color: blue,,10/24/25 13:51
+player 12,2,9,Participant,Play,Card 2 to Slot 2,10.999,10/24/25 13:51
